@@ -4261,6 +4261,22 @@ webpackJsonp([1], {
         n.
         default.use(R.a);
         var ce = [{
+                path: "/user/new",
+                redirect: "/user/new/main",
+                component: G,
+                meta: {
+                    type: "user",
+                    icon: "el-icon-star-off",
+                    title: "最新动态"
+                },
+                children: [{
+                        path: "main",
+                        component: Q,
+                        meta: {
+                            title: "最新动态"
+                        }
+                    }]
+            }, {
                 path: "/user/blog",
                 redirect: "/user/blog/main",
                 component: G,
