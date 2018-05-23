@@ -635,14 +635,14 @@ webpackJsonp([1], {
                                         type: "success",
                                         size: "small"
                                     }
-                                }, [t._v(" ")]), t._v("   Token已绑定  \n            "), i("el-button", {
+                                }, [t._v(" ")]), t._v("   Token已绑定  \n"), i("el-button", {
                                     attrs: {
                                         type: "text"
                                     },
                                     on: {
                                         click: t.cancellation
                                     }
-                                }, [t._v("注销")])], 1) : t._e(), t._v(" ")]), t._v(" "), i("token-dialog", {
+                                }, [t._v("注销")])], 1) : t._e(), t._v(" "), ]), t._v(" "), i("token-dialog", {
                             ref: "tokenDialog"
                         })], 1)
                 },
@@ -673,17 +673,12 @@ webpackJsonp([1], {
                             attrs: {
                                 span: 10
                             }
-                        }, [i("div", [t._v("© 2018 GitHub-Laziji"), i("a", {
-                                    attrs: {
-                                        href: "https://github.com/GitHub-Laziji",
-                                        target: "_blank"
-                                    }
-                                }, [t._v("Profile")]), t._v(" "), i("a", {
+                        }, [i("div", [t._v("© 2018 Powered by "), t._v(" "), i("a", {
                                     attrs: {
                                         href: "https://github.com/GitHub-Laziji/vblog",
                                         target: "_blank"
                                     }
-                                }, [t._v("VBlog")])])]), t._v(" "), i("el-col", {
+                                }, [t._v("vBlog")])])]), t._v(" "), i("el-col", {
                             attrs: {
                                 span: 4
                             }
