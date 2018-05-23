@@ -2492,8 +2492,8 @@ webpackJsonp([1], {
                                     "line-height": "1.5",
                                     color: "#606c71"
                                 }
-                            }, [t._v("\n            发布 " + t._s(t.blog.createTime) + "\n            "), i("br"), t._v(
-                                    " 更新 " + t._s(t.blog.updateTime) + "\n        ")]), t._v(" "), i("div", {
+                            }, [t._v("\n            发布 " + t._s(t.blog.createTime) + "\n            "), i(""), t._v(
+                                    "  |  更新 " + t._s(t.blog.updateTime) + "\n        ")]), t._v(" "), i("div", {
                                 staticStyle: {
                                     "font-size": "1.1rem",
                                     "line-height": "1.5",
@@ -2962,8 +2962,8 @@ webpackJsonp([1], {
                                     "line-height": "1.5",
                                     color: "#606c71"
                                 }
-                            }, [t._v("\n            发布 " + t._s(t.project.createTime) + "\n            "), i("br"), t._v(
-                                    " 更新 " + t._s(t.project.updateTime) + "\n        ")]), t._v(" "), i("div", {
+                            }, [t._v("\n            发布 " + t._s(t.project.createTime) + "\n            "), i(""), t._v(
+                                    "  |  更新 " + t._s(t.project.updateTime) + "\n        ")]), t._v(" "), i("div", {
                                 staticStyle: {
                                     "font-size": "1.1rem",
                                     "line-height": "1.5",
@@ -3851,7 +3851,7 @@ webpackJsonp([1], {
                                 color: "#606c71",
                                 padding: "10px"
                             }
-                        }, [t._v("\n        发布 " + t._s(t.blog.createTime) + "\n        "), i("br"), t._v(" 更新 " + t._s(
+                        }, [t._v("\n        发布 " + t._s(t.blog.createTime) + "\n        "), i(""), t._v("  |  更新 " + t._s(
                                 t.blog.updateTime) + "\n    ")]), t._v(" "), i("div", {
                             staticStyle: {
                                 "font-size": "1.0rem",
@@ -4076,7 +4076,7 @@ webpackJsonp([1], {
                                 color: "#606c71",
                                 padding: "10px"
                             }
-                        }, [t._v("\n        发布 " + t._s(t.project.createTime) + "\n        "), i("br"), t._v(" 更新 " + t
+                        }, [t._v("\n        发布 " + t._s(t.project.createTime) + "\n        "), i(""), t._v("  |  更新 " + t
                                 ._s(t.project.updateTime) + "\n    ")]), t._v(" "), i("div", {
                             staticStyle: {
                                 "font-size": "1.0rem",
@@ -4261,22 +4261,6 @@ webpackJsonp([1], {
         n.
         default.use(R.a);
         var ce = [{
-                path: "/user/new",
-                redirect: "/user/new/main",
-                component: G,
-                meta: {
-                    type: "user",
-                    icon: "el-icon-star-off",
-                    title: "最新动态"
-                },
-                children: [{
-                        path: "main",
-                        component: Q,
-                        meta: {
-                            title: "最新动态"
-                        }
-                    }]
-            }, {
                 path: "/user/blog",
                 redirect: "/user/blog/main",
                 component: G,
