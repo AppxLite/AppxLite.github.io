@@ -673,12 +673,17 @@ webpackJsonp([1], {
                             attrs: {
                                 span: 10
                             }
-                        }, [i("div", [t._v("Powered by"), , t._v(" "), i("a", {
+                        }, [i("div", [t._v("© 2018 GitHub-Laziji"), i("a", {
+                                    attrs: {
+                                        href: "https://github.com/GitHub-Laziji",
+                                        target: "_blank"
+                                    }
+                                }, [t._v("Profile")]), t._v(" "), i("a", {
                                     attrs: {
                                         href: "https://github.com/GitHub-Laziji/vblog",
                                         target: "_blank"
                                     }
-                                }, [t._v("vBlog")])])]), t._v(" "), i("el-col", {
+                                }, [t._v("VBlog")])])]), t._v(" "), i("el-col", {
                             attrs: {
                                 span: 4
                             }
@@ -687,7 +692,9 @@ webpackJsonp([1], {
                                     "text-align": "center",
                                     "font-size": "18px"
                                 }
-                            }, [])]), t._v(" "), i("el-col", {
+                            }, [i("i", {
+                                    staticClass: "el-icon-location-outline"
+                                })])]), t._v(" "), i("el-col", {
                             attrs: {
                                 span: 10
                             }
