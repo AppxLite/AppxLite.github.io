@@ -880,7 +880,7 @@ webpackJsonp([1], {
                                 staticClass: "project-name"
                             }, [t._v(t._s(t.blogTitle))]), t._v(" "), i("h2", {
                                 staticClass: "project-tagline"
-                            }, [t._v(t._s(t.blogDescribe))]), t._v(" "), i("div", {
+                            }, [t._v(t._s(t.blogDescribe))])], 2), t._v(" "), i("div", {
                             staticStyle: {
                                 position: "relative",
                                 "z-index": "2",
