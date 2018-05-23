@@ -682,37 +682,11 @@ webpackJsonp([1], {
                             attrs: {
                                 span: 4
                             }
-                        }, [i("div", {
-                                staticStyle: {
-                                    "text-align": "center",
-                                    "font-size": "18px"
-                                }
-                            }, [i("i", {
-                                    staticClass: "el-icon-location-outline"
-                                })])]), t._v(" "), i("el-col", {
+                        }, []), t._v(" "), i("el-col", {
                             attrs: {
                                 span: 10
                             }
-                        }, [i("div", {
-                                staticStyle: {
-                                    float: "right"
-                                }
-                            }, [i("a", {
-                                    attrs: {
-                                        href: "https://developer.github.com",
-                                        target: "_blank"
-                                    }
-                                }, [t._v("GitHub-API")]), t._v("  \n\t\t\t\t"), i("a", {
-                                    attrs: {
-                                        href: "https://cn.vuejs.org/",
-                                        target: "_blank"
-                                    }
-                                }, [t._v("Vue.js")]), t._v("  \n\t\t\t\t"), i("a", {
-                                    attrs: {
-                                        href: "http://element.eleme.io/",
-                                        target: "_blank"
-                                    }
-                                }, [t._v("Element")])])])], 1)], 1)
+                        }, [])], 1)], 1)
             },
             staticRenderFns: []
         }, V = {
