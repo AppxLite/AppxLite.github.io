@@ -2501,11 +2501,7 @@ webpackJsonp([1], {
                                     "border-bottom": "1px solid #E4E7ED",
                                     padding: "5px 0px 5px 0px"
                                 }
-                            }, [i("pre", {
-                                    staticStyle: {
-                                        "font-family": "'微软雅黑'"
-                                    }
-                                }, [t._v(t._s(t.blog.description))])]), t._v(" "), i("div", {
+                            }, []), t._v(" "), i("div", {
                                 staticClass: "markdown-body",
                                 staticStyle: {
                                     "padding-top": "20px"
