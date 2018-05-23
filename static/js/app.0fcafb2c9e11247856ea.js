@@ -880,7 +880,19 @@ webpackJsonp([1], {
                                 staticClass: "project-name"
                             }, [t._v(t._s(t.blogTitle))]), t._v(" "), i("h2", {
                                 staticClass: "project-tagline"
-                            }, [t._v(t._s(t.blogDescribe))])], 2), t._v(" "), i("div", {
+                            }, [t._v(t._s(t.blogDescribe))]), t._v(" "), i("a", {
+                                staticClass: "btn",
+                                attrs: {
+                                    href: "https://github.com/" + t.githubUsername,
+                                    target: "_blank"
+                                }
+                            }, [t._v("GitHub主页")]), t._v(" "), t.mini ? t._e() : i("a", {
+                                staticClass: "btn",
+                                attrs: {
+                                    href: "https://github.com/GitHub-Laziji/vblog",
+                                    target: "_blank"
+                                }
+                            }, [t._v("博客源码")])], 2), t._v(" "), i("div", {
                             staticStyle: {
                                 position: "relative",
                                 "z-index": "2",
