@@ -1213,7 +1213,7 @@ webpackJsonp([1], {
                                     "line-height": "1.5",
                                     color: "#606c71"
                                 }
-                            }, [t._v("\n            发布 " + t._s(t.blog.createTime) + "\n            "), i(" | "), t._v(
+                            }, [t._v("\n            发布 " + t._s(t.blog.createTime) + "\n            "), i("' | '"), t._v(
                                     " 更新 " + t._s(t.blog.updateTime) + "\n        ")]), t._v(" "), i("div", {
                                 staticStyle: {
                                     "font-size": "1.1rem",
