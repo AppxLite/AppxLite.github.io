@@ -673,17 +673,12 @@ webpackJsonp([1], {
                             attrs: {
                                 span: 10
                             }
-                        }, [i("div", [t._v("\n\t\t\t\t© 2018 GitHub-Laziji  \n\t\t\t\t"), i("a", {
-                                    attrs: {
-                                        href: "https://github.com/GitHub-Laziji",
-                                        target: "_blank"
-                                    }
-                                }, [t._v("Profile")]), t._v("  \n\t\t\t\t"), i("a", {
+                        }, [i("div", [t._v("Powered by"), , t._v(" "), i("a", {
                                     attrs: {
                                         href: "https://github.com/GitHub-Laziji/vblog",
                                         target: "_blank"
                                     }
-                                }, [t._v("VBlog")])])]), t._v(" "), i("el-col", {
+                                }, [t._v("vBlog")])])]), t._v(" "), i("el-col", {
                             attrs: {
                                 span: 4
                             }
