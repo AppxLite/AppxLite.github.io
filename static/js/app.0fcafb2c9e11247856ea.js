@@ -4281,28 +4281,6 @@ webpackJsonp([1], {
                         }
                     }]
             }, {
-                path: "/user/social",
-                redirect: "/user/social/main",
-                component: G,
-                meta: {
-                    type: "user",
-                    icon: "el-icon-mobile-phone",
-                    title: "社交圈"
-                },
-                children: [{
-                        path: "main",
-                        component: it,
-                        meta: {
-                            title: "社交圈"
-                        }
-                    }, {
-                        path: "details/:name",
-                        component: at,
-                        meta: {
-                            title: "用户资料"
-                        }
-                    }]
-            }, {
                 path: "/user/blog",
                 redirect: "/user/blog/main",
                 component: G,
@@ -4365,30 +4343,13 @@ webpackJsonp([1], {
                 meta: {
                     type: "user",
                     icon: "el-icon-document",
-                    title: "README.md"
+                    title: "ReadMe"
                 },
                 children: [{
                         path: "main",
                         component: Rt,
                         meta: {
-                            title: "README.md"
-                        }
-                    }]
-            }, {
-                path: "/user/license",
-                redirect: "/user/license/main",
-                component: G,
-                meta: {
-                    type: "user",
-                    icon: "el-icon-news",
-                    title: "License",
-                    mini: !0
-                },
-                children: [{
-                        path: "main",
-                        component: Dt,
-                        meta: {
-                            title: "License"
+                            title: "ReadMe"
                         }
                     }]
             }, {
