@@ -1,19 +1,19 @@
 webpackJsonp([1], {
     "03Sx": function (t, e, i) {
-        //t.exports = i.p + "static/img/deploy1.75fd811.png"
+        t.exports = i.p + "static/img/deploy1.75fd811.png"
     },
     "5z4e": function (t, e) {},
     "96Mt": function (t, e) {},
     AmfQ: function (t, e, i) {
-        //t.exports = i.p + "static/img/use1.18f36b8.png"
+        t.exports = i.p + "static/img/use1.18f36b8.png"
     },
     Bi2u: function (t, e, i) {
-        //t.exports = i.p + "static/img/use2.449ac15.png"
+        t.exports = i.p + "static/img/use2.449ac15.png"
     },
     CMvz: function (t, e) {},
     Hl2I: function (t, e) {},
     K5X3: function (t, e, i) {
-        //t.exports = i.p + "static/img/deploy0.aaa30ac.png"
+        t.exports = i.p + "static/img/deploy0.aaa30ac.png"
     },
     NHnr: function (t, e, i) {
         "use strict";
@@ -643,7 +643,18 @@ webpackJsonp([1], {
                                         click: t.cancellation
                                     }
                                 }, [t._v("注销")])], 1) : t._e(), t._v(" "), i("div", {
-                            }, 1)]), t._v(" "), i("token-dialog", {
+                                staticStyle: {
+                                    "margin-top": "10px",
+                                    "text-align": "left"
+                                }
+                            }, [i("el-alert", {
+                                    attrs: {
+                                        title: "Token获取",
+                                        type: "info",
+                                        description: "在 github-> settings-> developerSettings-> personalAccessTokens 勾选gist权限,获取Token. 详情参考README.md",
+                                        closable: !1
+                                    }
+                                })], 1)]), t._v(" "), i("token-dialog", {
                             ref: "tokenDialog"
                         })], 1)
                 },
@@ -869,7 +880,15 @@ webpackJsonp([1], {
                                 staticClass: "project-name"
                             }, [t._v(t._s(t.blogTitle))]), t._v(" "), i("h2", {
                                 staticClass: "project-tagline"
-                            }, [i("el-card", {
+                            }, [t._v(t._s(t.blogDescribe))]), t._v(" "), i("div", {
+                            staticStyle: {
+                                position: "relative",
+                                "z-index": "2",
+                                margin: "auto",
+                                "margin-top": "-30px",
+                                width: "64rem"
+                            }
+                        }, [i("el-card", {
                                 attrs: {
                                     shadow: "never",
                                     "body-style": {
@@ -896,9 +915,13 @@ webpackJsonp([1], {
                                                     slot: "title"
                                                 }, [t._v("了解博主")]), t._v(" "), i("el-menu-item", {
                                                     attrs: {
+                                                        index: "#githubHome"
+                                                    }
+                                                }, [t._v("github主页")]), t._v(" "), i("el-menu-item", {
+                                                    attrs: {
                                                         index: "#blog"
                                                     }
-                                                }, [t._v("博客主页")])], 2), t._v(" "), t.webSites.length > 0 ? i(
+                                                }, [t._v("其他博客")])], 2), t._v(" "), t.webSites.length > 0 ? i(
                                                 "el-submenu", {
                                                 attrs: {
                                                     index: "#webSites"
@@ -3553,6 +3576,191 @@ webpackJsonp([1], {
                 },
                 staticRenderFns: []
             }, Ot = i("VU/8")(Lt, qt, !1, null, null, null).exports,
+            Bt = {
+                data: function () {
+                    return {
+                        active: "deploy",
+                        deploy: {
+                            images: [i("K5X3"), i("03Sx"), i("WcGS")],
+                            status: "process",
+                            active: 0
+                        },
+                        use: {
+                            images: [i("yRN/"), i("AmfQ"), i("Bi2u")],
+                            status: "process",
+                            active: 0
+                        }
+                    }
+                },
+                mounted: function () {},
+                methods: {
+                    deployChange: function (t) {
+                        this.deploy.status = 2 == t ? "success" : "process", this.deploy.active = t
+                    },
+                    useChange: function (t) {
+                        this.use.status = 2 == t ? "success" : "process", this.use.active = t
+                    }
+                }
+            }, At = {
+                render: function () {
+                    var t = this,
+                        e = t.$createElement,
+                        i = t._self._c || e;
+                    return i("div", [i("el-card", {
+                            staticStyle: {
+                                "min-height": "600px",
+                                "margin-bottom": "20px"
+                            },
+                            attrs: {
+                                shadow: "never"
+                            }
+                        }, [i("el-collapse", {
+                                attrs: {
+                                    accordion: ""
+                                },
+                                model: {
+                                    value: t.active,
+                                    callback: function (e) {
+                                        t.active = e
+                                    },
+                                    expression: "active"
+                                }
+                            }, [i("el-collapse-item", {
+                                    attrs: {
+                                        title: "如何部署",
+                                        name: "deploy"
+                                    }
+                                }, [i("el-carousel", {
+                                        attrs: {
+                                            trigger: "click",
+                                            height: "352px",
+                                            autoplay: !1
+                                        },
+                                        on: {
+                                            change: t.deployChange
+                                        }
+                                    }, t._l(t.deploy.images, function (t, e) {
+                                        return i("el-carousel-item", {
+                                            key: "deploy" + e
+                                        }, [i("div", {
+                                                staticStyle: {
+                                                    "border-radius": "5px",
+                                                    border: "1px solid #EBEEF5",
+                                                    height: "350px"
+                                                }
+                                            }, [i("img", {
+                                                    staticStyle: {
+                                                        width: "100%",
+                                                        height: "350px"
+                                                    },
+                                                    attrs: {
+                                                        src: t
+                                                    }
+                                                })])])
+                                    })), t._v(" "), i("el-steps", {
+                                        staticStyle: {
+                                            "margin-top": "20px"
+                                        },
+                                        attrs: {
+                                            active: t.deploy.active,
+                                            "align-center": "",
+                                            "process-status": t.deploy.status
+                                        }
+                                    }, [i("el-step", {
+                                            attrs: {
+                                                title: "克隆项目",
+                                                description: "https://github.com/GitHub-Laziji/GitHub-Laziji.github.io"
+                                            }
+                                        }), t._v(" "), i("el-step", {
+                                            attrs: {
+                                                title: "修改配置",
+                                                description: "将 /static/configuration.json 中的 githubUsername  改为自己的"
+                                            }
+                                        }), t._v(" "), i("el-step", {
+                                            attrs: {
+                                                title: "查看效果",
+                                                description: "https://用户名.github.io 就是你的博客了"
+                                            }
+                                        })], 1)], 1), t._v(" "), i("el-collapse-item", {
+                                    attrs: {
+                                        title: "如何使用",
+                                        name: "use"
+                                    }
+                                }, [i("el-carousel", {
+                                        attrs: {
+                                            trigger: "click",
+                                            height: "352px",
+                                            autoplay: !1
+                                        },
+                                        on: {
+                                            change: t.useChange
+                                        }
+                                    }, t._l(t.use.images, function (t, e) {
+                                        return i("el-carousel-item", {
+                                            key: "use" + e
+                                        }, [i("div", {
+                                                staticStyle: {
+                                                    "border-radius": "5px",
+                                                    border: "1px solid #EBEEF5",
+                                                    height: "350px"
+                                                }
+                                            }, [i("img", {
+                                                    staticStyle: {
+                                                        width: "100%",
+                                                        height: "350px"
+                                                    },
+                                                    attrs: {
+                                                        src: t
+                                                    }
+                                                })])])
+                                    })), t._v(" "), i("el-steps", {
+                                        staticStyle: {
+                                            "margin-top": "20px"
+                                        },
+                                        attrs: {
+                                            active: t.use.active,
+                                            "align-center": "",
+                                            "process-status": t.use.status
+                                        }
+                                    }, [i("el-step", {
+                                            attrs: {
+                                                title: "获取Token",
+                                                description: "在GitHub上获取调用API所需的Token"
+                                            }
+                                        }), t._v(" "), i("el-step", {
+                                            attrs: {
+                                                title: "登录",
+                                                description: "将获取的Token绑定上"
+                                            }
+                                        }), t._v(" "), i("el-step", {
+                                            attrs: {
+                                                title: "发个博客",
+                                                description: "点击博客列表右上角的发布博文按钮"
+                                            }
+                                        })], 1)], 1), t._v(" "), i("el-collapse-item", {
+                                    attrs: {
+                                        title: "开发注意事项",
+                                        name: "develop"
+                                    }
+                                }, [i("div", {
+                                        staticStyle: {
+                                            padding: "10px",
+                                            "line-height": "30px",
+                                            color: "#303133",
+                                            "font-size": "16px"
+                                        }
+                                    }, [t._v("\n                    配置文件读取的总是与\n                    "), i("tt", [t._v(
+                                                "index.html")]), t._v(" 同级的\n                    "), i("tt", [t._v(
+                                                "./static/configuration.json")]), t._v(
+                                            " , 而修改配置的时候是通过\n                    "), i("tt", [t._v("github-api")]), t._v(
+                                            " 修改\n                    "), i("tt", [t._v("你的用户名.github.io")]), t._v(
+                                            " 下的\n                    "), i("tt", [t._v("/static/configuration.json")]),
+                                            t._v(", 所以本地\n                    "), i("tt", [t._v("npm run dev")]), t._v(
+                                            " 的时候会出现修改配置无效的情况, 如果需要修改的话修改本地的配置文件就行, 发布到\n                    "), i("tt", [
+                                                t._v("github")]), t._v(" 之后不影响")], 1)])], 1)], 1)], 1)
+                },
+                staticRenderFns: []
+            }, Nt = i("VU/8")(Bt, At, !1, null, null, null).exports,
             It = {
                 render: function () {
                     var t = this.$createElement,
@@ -4337,6 +4545,23 @@ webpackJsonp([1], {
                         }
                     }]
             }, {
+                path: "/user/helper",
+                redirect: "/user/helper/main",
+                component: G,
+                meta: {
+                    type: "user",
+                    icon: "el-icon-printer",
+                    title: "使用帮助",
+                    mini: !0
+                },
+                children: [{
+                        path: "main",
+                        component: Nt,
+                        meta: {
+                            title: "使用帮助"
+                        }
+                    }]
+            }, {
                 path: "/user/readme",
                 redirect: "/user/readme/main",
                 component: G,
@@ -4532,7 +4757,7 @@ webpackJsonp([1], {
     Oh2p: function (t, e) {},
     U2e4: function (t, e) {},
     WcGS: function (t, e, i) {
-        //t.exports = i.p + "static/img/deploy2.6d80b32.png"
+        t.exports = i.p + "static/img/deploy2.6d80b32.png"
     },
     XiW0: function (t, e) {},
     YF9t: function (t, e) {},
@@ -4540,7 +4765,7 @@ webpackJsonp([1], {
     pw1w: function (t, e) {},
     tvR6: function (t, e) {},
     "yRN/": function (t, e, i) {
-        //t.exports = i.p + "static/img/use0.61c0f0e.png"
+        t.exports = i.p + "static/img/use0.61c0f0e.png"
     }
 }, ["NHnr"]);
 //# sourceMappingURL=app.0fcafb2c9e11247856ea.js.map
