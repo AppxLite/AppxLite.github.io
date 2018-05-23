@@ -673,7 +673,7 @@ webpackJsonp([1], {
                             attrs: {
                                 span: 10
                             }
-                        }, [i("div", [t._v("Powered by\b"), t._v(""), i("a", {
+                        }, [i("div", [t._v("Powered by "), t._v(""), i("a", {
                                     attrs: {
                                         href: "https://github.com/GitHub-Laziji/vblog",
                                         target: "_blank"
